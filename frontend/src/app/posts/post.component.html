@@ -1,9 +1,4 @@
-import { Component } from '@angular/core';
-import { ApiService } from './api.service';
-
-@Component({
-  selector: 'post',
-  template: `<div style="width: 100%">
+<div style="width: 100%">
   <mat-card>
     <mat-card-header>
       <mat-card-title>
@@ -11,7 +6,7 @@ import { ApiService } from './api.service';
       </mat-card-title>
     </mat-card-header>
     <mat-card-content>
-    <form>
+      <form>
         <mat-form-field class="example-full-width">
           <textarea [(ngModel)]="postMsg" name="description" matInput placeholder="Posts"></textarea>
         </mat-form-field>
@@ -21,14 +16,3 @@ import { ApiService } from './api.service';
     </mat-card-content>
   </mat-card>
 </div>
-`,
-})
-export class PostComponent {
-  constructor(private apiService: ApiService) {}
-  postMsg = '';
-
-  post() {
-    console.log(this.postMsg);
-    this.apiService.postMessages({ msg: this.postMsg });
-  }
-}
