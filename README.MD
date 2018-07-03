@@ -38,4 +38,4 @@ To run the backend application :
       
 - Go to frontend folder
 > simply start the angular project using the command: 
-> `ng server -o` . (or) `ng server --open`
+> `ng serve -o` . (or) `ng serve --open`
