@@ -36,6 +36,6 @@ To run the backend application :
 > restarting the server) or you can still use 
 > `node server.js`
       
-> Go to frontend folder
-> simply start the angular project 
+- Go to frontend folder
+> simply start the angular project using the command: 
 > `ng server -o` . (or) `ng server --open`
