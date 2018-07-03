@@ -30,10 +30,12 @@
 # Running the application 
 To run the backend application :
 
-      - Go to backend folder
-      > `nodemon server.js`
-      (Make sure nodemon is installed: When you want to make changes in sever.js it will help to laod dynamically rather than restarting the server) or you can still use `node server.js`
+- Go to backend folder
+> `nodemon server.js`
+> (Make sure nodemon is installed: When you want to make changes in sever.js it will help to laod dynamically rather than  
+> restarting the server) or you can still use 
+> `node server.js`
       
-      - Go to frontend folder
-      simply start the angular project 
-      > ng server -o . (or) ng server --open
+> Go to frontend folder
+> simply start the angular project 
+> `ng server -o` . (or) `ng server --open`
