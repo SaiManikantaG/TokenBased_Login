@@ -26,3 +26,13 @@
 
 -   update your database connection string in `server.js` file as given with reference and comments in the code
 -   I've used `MongoDB` for my database, use are free to use any other database and it doesn't matter as long as it is `NoSQL`. For `SQL` match the fields accordingly
+
+# Running the application 
+To run the backend application :
+      - Go to backend folder
+      > `nodemon server.js`
+      (Make sure nodemon is installed: When you want to make changes in sever.js it will help to laod dynamically rather than restarting the server) or you can still use `node server.js`
+      
+      - Go to frontend folder
+      simply start the angular project 
+      > ng server -o . (or) ng server --open
