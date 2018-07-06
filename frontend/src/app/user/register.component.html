@@ -22,6 +22,8 @@
           <textarea [(ngModel)]="registerData.description" name="description" matInput placeholder="description"></textarea>
         </mat-form-field>
         <br>
+        <input type="file" (change)="onFileSelected($event)">
+        <br>
         <button (click)="post()" mat-raised-button color="primary">Register</button>
       </form>
     </mat-card-content>
