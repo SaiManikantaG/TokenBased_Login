@@ -13,7 +13,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ApiService } from './api/api.service';
 import { AuthService } from './auth/auth.service';
-import { MessagesComponent } from './messages.component';
+import { MessagesComponent } from './posts/messages.component';
 import { RegisterComponent } from './user/register.component';
 import { LoginComponent } from './user/login.component';
 import { UsersComponent } from './user/users.component';
@@ -21,7 +21,7 @@ import { ProfileComponent } from './user/profile.component';
 import { AuthInterceptorService } from './auth/authInterceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { PostComponent } from './post.component';
+import { PostComponent } from './posts/post.component';
 const routes = [
 	{ path: 'register', component: RegisterComponent },
 	{ path: 'login', component: LoginComponent },

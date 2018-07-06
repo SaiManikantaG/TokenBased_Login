@@ -6,7 +6,9 @@ var mongoose = require('mongoose');
 var auth = require('./auth');
 var User = require('./models/user');
 var Post = require('./models/Post');
-var jwt = require('jwt-simple');
+var multer = require('multer')
+var crypto = require('crypto')
+var mime = require('mime')
 
 mongoose.Promise = Promise;
 
@@ -57,6 +59,38 @@ app.get('/profile/:id', async (req, res) => {
     res.sendStatus(500);
   }
 });
+
+// File Uploads functionality
+
+app.post('/upload', function uploadAudio(req, res) {
+  var tmpUploadsPath = './upload'
+  var storage = multer.diskStorage({
+    destination: tmpUploadsPath,
+    filename: function (req, file, cb) {
+      crypto.pseudoRandomBytes(16, function (err, raw) {
+        cb(null, raw.toString('hex') + Date.now() + '.' + mime.getExtension(file.mimetype));
+      });
+    }
+  });
+  var upload = multer({
+    storage: storage
+  }).any();
+
+  upload(req, res, function (err) {
+    if (err) {
+      console.log(err);
+      return res.end('Error');
+    } else {
+      console.log(req.body);
+      req.files.forEach(function (item) {
+        console.log(item);
+        // move your file to destination
+      });
+      res.end('File uploaded');
+    }
+  });
+});
+
 // Enter your connection string along with user creds to connect to MongoDB below
 mongoose.connect(
   '<<Database Connection String>>',
