@@ -17,6 +17,15 @@
 -   `Angular 5` was used as a front end for communication with the user
 -   `Angular material` library was used to design the form and front-end styling
 
+# Additional functionalities
+
+- [x] :boom:  Added file upload option to the register form, which now saves the uploaded files to the project local directory. Used `multer` package
+
+# Upcoming plans
+
+- [x] :boom: Including an option to set the user picture i.e. profile picture for the logged in user.
+- [x] :boom: Sending the uploaded data information as an email to the admin (_selected user details at the server level, planning to use `nodemailer`_)
+
 # Project folders
 
 -   `backend` folder is the place where we can find all the code related to backend stuff
