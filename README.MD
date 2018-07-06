@@ -48,3 +48,10 @@ To run the backend application :
 - Go to frontend folder
 > simply start the angular project using the command: 
 > `ng serve -o` . (or) `ng serve --open`
+
+# Project Build
+
+- Although I have uploaded the complete project here, the best and optimal way to build a project for the frontend angular is using `ng build`.
+- When we the run the command `ng build`, it builds the project and create specific files that are required to be uploaded or used to run the frontend which are stored in dist folder. We can just upload or use this files in dist folder to run the project
+- However make sure you run `npm install` to install all required packages before running the project.
+- Same is the case with backend, where instead of uploading all the ng-modules directory we can simply avoid the directory there by reducing the project files size and then upload rest of the required files including `package.json` file and then run `npm install` to install all the required packages that are defined in `package.json` file to run the backend server
