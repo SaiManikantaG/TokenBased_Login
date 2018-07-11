@@ -21,10 +21,6 @@
 
 - [x] :boom:  Added file upload option to the register form, which now saves the uploaded files to the project local directory. Used `multer` package
 
-# Upcoming plans
-
-- [x] :boom: Including an option to set the user picture i.e. profile picture for the logged in user.
-- [x] :boom: Sending the uploaded data information as an email to the admin (_selected user details at the server level, planning to use `nodemailer`_)
 
 # Project folders
 
